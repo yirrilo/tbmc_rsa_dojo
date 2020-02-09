@@ -1,7 +1,7 @@
 # JavaScript
 
 ## Run all tests
-From this folder ``npm test``
+Install all dependencies ``npm install`` then run tests ``npm test``
 
 ## Solution
 Checkout on branch ``solution``
