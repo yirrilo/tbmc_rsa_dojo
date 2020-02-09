@@ -1,0 +1,29 @@
+{
+    "name": "dojo_rsa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/tbmc/rsa_dojo.git"
+    },
+    "author": "tbmc",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/tbmc/rsa_dojo/issues"
+    },
+    "homepage": "https://gitlab.com/tbmc/rsa_dojo#readme",
+    "devDependencies": {
+        "@types/jest": "^25.1.2",
+        "@types/node": "^13.7.0",
+        "jest": "^25.1.0",
+        "ts-jest": "^25.2.0",
+        "typescript": "^3.7.5"
+    },
+    "dependencies": {
+        "big-integer": "^1.6.48"
+    }
+}
