@@ -2,8 +2,6 @@ from typing import Tuple, List
 
 
 class Rsa:
-    p: int
-    q: int
     e: int
     n: int
     d: int
@@ -25,8 +23,6 @@ class Rsa:
         return 1
 
     def generate_keys(self, p: int, q: int, e: int) -> None:
-        self.p = p
-        self.q = q
         self.e = e
         self.n = p * q
         self.phi = (p - 1) * (q - 1)
