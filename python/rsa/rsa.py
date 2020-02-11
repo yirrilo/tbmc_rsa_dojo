@@ -2,8 +2,6 @@ from typing import Tuple, List
 
 
 class Rsa:
-    p: int
-    q: int
     e: int
     n: int
     d: int
@@ -21,8 +19,6 @@ class Rsa:
         raise NotImplementedError()
 
     def generate_keys(self, p: int, q: int, e: int) -> None:
-        self.p = p
-        self.q = q
         self.e = e
         raise NotImplementedError()
 
