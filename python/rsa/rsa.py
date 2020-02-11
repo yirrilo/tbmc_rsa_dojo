@@ -17,23 +17,12 @@ class Rsa:
     def private_key(self):
         return self.d, self.n
 
-    def __egcd(self, a: int, b: int) -> Tuple[int, int, int]:
-        """
-        Compute the extended euclidean algorithm
-        :param a:
-        :param b:
-        :return: gcd, u, v
-        """
-        if a == 0:
-            return b, 0, 1
-        gcd, u, v = self.__egcd(b % a, a)
-        return gcd, v - (b // a) * u, u
-
     def __modinv(self, a: int, b: int) -> int:
-        gcd, u, v = self.__egcd(a, b)
-        if gcd != 1:
-            raise ValueError("Module inverse doesn't exist")
-        return u % b
+        a = a % b
+        for i in range(1, b):
+            if (a * i) % b == 1:
+                return i
+        return 1
 
     def generate_keys(self, p: int, q: int, e: int) -> None:
         self.p = p

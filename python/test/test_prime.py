@@ -1,5 +1,5 @@
 import unittest
-import python.rsa.prime as prime
+import rsa.prime as prime
 
 
 class TestSimplePrimeTest(unittest.TestCase):
