@@ -1,7 +1,5 @@
 const BigInt = require('big-integer');
 
-export const modulo = (a: number, b: number) => ((a % b) + b) % b;
-
 export class Rsa {
     private e: number;
     private n: number;
